@@ -10,7 +10,7 @@
  *   Hasan Eren Keskin
  *   Electrical and Electronics Engineer
  *   email:      herenkeskin@gmail.com
- *   github:     @erenkeskin95
+ *   github:     @erenkeskin
  *   website:    http://herenkeskin.com
  *
  *   Ring Buffer (Circular Buffer) basic remix version for any users.
