@@ -18,7 +18,9 @@ Ring buffer has many names. You might have heard of a circular buffer, circular 
 As you can imagine, a ring buffer is mostly used as a queue. It has read and write positions which are used by the consumer and the producer, respectively. When the read or write index reaches the end of the underlying array, it is set back to 0. This activity is usually called “wrapping around,” and it requires a bit more explanation. ([dzone](https://stackedit.io/))
 
 1 - [https://www.techopedia.com/definition/18301/ring-buffer](https://www.techopedia.com/definition/18301/ring-buffer)
+
 2 - [https://en.wikipedia.org/wiki/Circular_buffer](https://en.wikipedia.org/wiki/Circular_buffer)
+
 3 - [https://embedjournal.com/implementing-circular-buffer-embedded-c/](https://embedjournal.com/implementing-circular-buffer-embedded-c/)
 
 
@@ -38,5 +40,7 @@ Documents
 Contact
 -------------
 Email: herenkeskin@gmail.com
+
 Twitter: @herenkeskin
+
 Website: http://herenkeskin.com
