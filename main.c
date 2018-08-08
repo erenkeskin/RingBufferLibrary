@@ -26,18 +26,15 @@ int main(void)
 
 	uint8_t i = 0;
 	uint8_t data[255] = "Hasan Eren Keskin";
-	uint8_t * return_to_buffer;
 
 	RingBuffer_InitBuffer(&rxRbuff, rxRbuff_data, sizeof(rxRbuff_data));
 
 	printf("Initialized Buffer Data Count: %d\n", RingBuffer_GetCount(&rxRbuff));
 
-	for(i = 0; i < strlen(data); i++)
+	if(!RingBuffer_IsFull(&rxRbuff))
 	{
-		if(!RingBuffer_IsFull(&rxRbuff))
-		{
-		    RingBuffer_Insert(&rxRbuff, data[i]);
-		}
+	    RingBuffer_Insert(&rxRbuff, data[i]);
+	    i++;
 	}
 
 	printf("Inserting Data Count: %d\n", RingBuffer_GetCount(&rxRbuff));

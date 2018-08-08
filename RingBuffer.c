@@ -15,6 +15,13 @@
  *
  *   Ring Buffer (Circular Buffer) basic remix version for any users.
  *   Version 1.0 - 08.08.2018
+ * 
+ *   NOTE: If you want to use this library in Embedded System Projecs, you must check these functions
+ *         and change some places where interrupt settings:
+ *
+ *              RingBuffer_GetCount()
+ *              RingBuffer_Insert()
+ *              RingBuffer_Remove()
  *
  ********************************************************************************************************/
 #include "RingBuffer.h"
